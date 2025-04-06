@@ -1,13 +1,16 @@
+/* The app is a grid layout with 6 columns */
 #app {
   display: grid;
   grid-template-columns: auto auto auto auto auto auto;
 } 
+/* Each character is a grid item */
 #app > .character {
   background-color: black;
   margin: 10px;
   border-radius: 20px;
   width: fit-content;
 }
+/* Each character has a title and an image */
 #app > .character > h1, h2 {
   color: white;
   text-align: center;
