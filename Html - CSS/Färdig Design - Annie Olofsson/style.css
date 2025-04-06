@@ -1,0 +1,361 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  background-image: url(assets/assets/negative-space-black-forest-dawn.jpg);
+  background-size: cover;
+  background-position: relative;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 660px;
+  position: relative;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  right: 2%;
+}
+
+label {
+  display: none;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 8px;
+  position: relative;
+}
+
+b {
+  line-height: 65px;
+  text-align: center;
+}
+
+main > p {
+  display: inline;
+  text-align: center;
+}
+
+.textbox {
+  display: flex;
+  width: 100%;
+  margin: 0;
+  position: absolute;
+  top: 40%;
+  padding: 0;
+  justify-content: center;
+}
+
+.textbox > p {
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  font-size: 20px;
+}
+
+.profil {
+  display: inline-block;
+  width: 40%;
+  overflow-x: visible;
+}
+
+.profil > img {
+  width: 50%;
+  border-radius: 100%;
+  position: relative;
+  left: 53%;
+  box-shadow: 0 0 20px #000000;
+}
+
+.profil > h2 {
+  position: relative;
+  left: 28%;
+}
+
+.lassequote {
+  margin-top: 10px;
+  position: relative;
+  background-color: #d3d3d3;
+  width: 35%;
+  height: auto;
+  border-radius: 5px;
+  left: 52%;
+  padding: 35px;
+}
+
+.lassequote > img {
+  display: inline;
+  width: 7%;
+}
+
+.lassequote > p {
+  font-size: 12px;
+  display: inline;
+  color: #000;
+  line-height: 3px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.gridcontainer {
+  display: grid;
+  grid-template-areas: "rakib rakib rakib alexandra alexandra alexandra" "lasse lasse lasse sebastian sebastian sebastian";
+}
+
+.rakib {
+  grid-area: rakib;
+}
+
+.alexandra {
+  grid-area: alexandra;
+}
+
+.lasse {
+  grid-area: lasse;
+}
+
+.sebastian {
+  grid-area: sebastian;
+}
+
+.gridcontainer > div > h2 {
+  position: relative;
+  font-size: 20px;
+  margin-bottom: 10px;
+  left: -5%;
+}
+
+.gridcontainer > div > img {
+  position: relative;
+  width: 40%;
+  border-radius: 100%;
+  box-shadow: 0 0 20px #000000;
+  left: 25%;
+}
+
+.gridcontainer > .lasse > .quote {
+  width: 24%;
+  left: 34%;
+}
+
+.gridcontainer > .lasse > .quote > img {
+  width: 15%;
+}
+
+.quote {
+  background-color: rgb(202, 202, 202);
+  width: 38%;
+  padding: 30px;
+  border-radius: 10px;
+  position: relative;
+  left: 25%;
+}
+
+.quote > img {
+  width: 8%;
+}
+
+/* Namn */
+h2 {
+  text-align: center;
+  font-size: 15px;
+}
+
+/* Footer */
+/* Griden håller divarna i footern på plats */
+footer {
+  display: grid;
+  grid-template-areas: "left left middle middle right right";
+  padding-left: 15%;
+  background-color: #000000;
+  padding: 28px;
+  margin-top: 20px;
+  float: left;
+  width: 100%;
+}
+
+p {
+  color: #fff;
+}
+
+.left {
+  grid-area: left;
+}
+
+.left > p {
+  text-align: left;
+}
+
+.middle {
+  grid-area: middle;
+}
+
+.middle > p {
+  float: left;
+  position: relative;
+}
+
+.right {
+  grid-area: right;
+}
+
+.right > p {
+  text-align: left;
+  font-size: 15px;
+}
+
+@media (max-width: 480px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  main {
+    width: auto;
+    background-size: cover;
+  }
+  p {
+    background-color: transparent;
+  }
+  li {
+    width: 100%;
+  }
+  li a {
+    display: block;
+    text-align: center;
+  }
+  :root {
+    --bar-width: 23px;
+    --bar-height: 4px;
+    --hamburger-gap: 3.5px;
+    --foreground: #fff;
+    --background: white;
+    --hamburger-margin: 8px;
+    --animation-timing: 200ms ease-in-out;
+    --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
+    --hamburger-left: 89%;
+  }
+  .hamburger-menu {
+    --x-width: calc(var(--hamburger-height) * 1.41421356237);
+    display: flex;
+    flex-direction: column;
+    gap: var(--hamburger-gap);
+    width: -moz-max-content;
+    width: max-content;
+    position: absolute;
+    top: var(--hamburger-margin);
+    left: var(--hamburger-left);
+    z-index: 2;
+    cursor: pointer;
+  }
+  .hamburger-menu:has(input:checked) {
+    --foreground: white;
+    --background: #fff;
+  }
+  .hamburger-menu:has(input:focus-visible)::before,
+  .hamburger-menu:has(input:focus-visible)::after,
+  .hamburger-menu input:focus-visible {
+    border: 1px solid var(--background);
+    box-shadow: 0 0 0 1px var(--foreground);
+  }
+  .hamburger-menu::before,
+  .hamburger-menu::after,
+  .hamburger-menu input {
+    content: "";
+    width: var(--bar-width);
+    height: var(--bar-height);
+    background-color: var(--foreground);
+    border-radius: 9999px;
+    transform-origin: left center;
+    transition: opacity var(--animation-timing), width var(--animation-timing), rotate var(--animation-timing), translate var(--animation-timing), background-color var(--animation-timing);
+  }
+  .hamburger-menu input {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    pointer-events: none;
+  }
+  .hamburger-menu:has(input:checked)::before {
+    rotate: 45deg;
+    width: var(--x-width);
+    translate: 0 calc(var(--bar-height) / -2);
+  }
+  .hamburger-menu:has(input:checked)::after {
+    rotate: -45deg;
+    width: var(--x-width);
+    translate: 0 calc(var(--bar-height) / 2);
+  }
+  .hamburger-menu input:checked {
+    opacity: 0;
+    width: 0;
+  }
+  .navbar {
+    transition: translate var(--animation-timing);
+    translate: -100%;
+    padding: 0.5rem 1rem;
+    padding-top: calc(var(--hamburger-height) + var(--hamburger-margin) + 1rem);
+    color: var(--background);
+    width: 100%;
+    min-height: 100vh;
+  }
+  .hamburger-menu:has(input:checked) + .navbar {
+    translate: 0;
+  }
+  .center {
+    background-color: #fff;
+  }
+  .gridcontainer {
+    display: grid;
+    grid-template-areas: "rakib rakib rakib" "alexandra alexandra alexandra" "lasse lasse lasse" "sebastian sebastian sebastian";
+  }
+  .quote {
+    width: 60%;
+    left: 17%;
+  }
+  .gridcontainer > .lasse .quote {
+    width: 50%;
+    left: 22%;
+  }
+  .gridcontainer > div > h2 {
+    left: 1%;
+  }
+  .gridcontainer > div > img {
+    left: 30%;
+  }
+  footer {
+    display: grid;
+    grid-template-areas: "left left left" "middle middle middle" "right right right";
+  }
+  footer > .left > p {
+    text-align: left;
+    line-height: 20px;
+    margin-bottom: 10px;
+  }
+  footer > .middle > p {
+    text-align: left;
+    line-height: 20px;
+    margin-bottom: 10px;
+  }
+  footer > .right > p {
+    line-height: 20px;
+  }
+}/*# sourceMappingURL=style.css.map */
