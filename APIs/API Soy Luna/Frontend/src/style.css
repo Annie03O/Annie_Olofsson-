@@ -1,0 +1,18 @@
+#app {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+} 
+#app > .character {
+  background-color: black;
+  margin: 10px;
+  border-radius: 20px;
+  width: fit-content;
+}
+#app > .character > h1, h2 {
+  color: white;
+  text-align: center;
+}
+#app > .character > img {
+  width: 250px;
+  border-radius: 20px;
+}
