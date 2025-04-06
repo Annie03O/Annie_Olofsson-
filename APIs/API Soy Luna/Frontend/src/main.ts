@@ -11,12 +11,15 @@ const characters: Character[] = await response.json();
 
 //Loop through the characters and create a div for each character
 characters.forEach((character) => {
+  const pagelink = document.createElement("a");
+  pagelink.href = character.link;
   const characterDiv = document.createElement("div");
   characterDiv.className = "character";
   const img = document.createElement("img");
   img.src = character.imgUrl;
   img.alt = character.name;
-  characterDiv.appendChild(img);
+  characterDiv.appendChild(pagelink);
+  pagelink.appendChild(img);
   const h1 = document.createElement("h1");
   h1.innerText = character.name;
   characterDiv.appendChild(h1);

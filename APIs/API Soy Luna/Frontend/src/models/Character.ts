@@ -4,4 +4,5 @@ export type Character = {
   name: string;
   actor: string;
   imgUrl: string;
+  link: string;
 }
