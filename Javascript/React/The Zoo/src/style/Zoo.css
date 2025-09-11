@@ -1,47 +1,47 @@
 .zoo {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 10px;
+    display: grid; /* Displays zoo as grid */
+    grid-template-columns: auto auto auto; /* Creates three equal columns */
+    gap: 10px; /* Adds a gap of 10px between grid items */
 }
 .animal {
-    background-color: gray;
-    border-radius: 20px;
-    width: 400px;
-    height: auto;
+    background-color: gray; /* Sets background color to gray */
+    border-radius: 20px; /* Rounds the corners with a radius of 20px */
+    width: 400px;   /* Sets width to 400px */
+    height: auto; /* Sets height to auto */
 }
 p {
-    font-size: 20px;
+    font-size: 20px; /* Sets font size to 20px */
 }
 .description {
-    font-size: 15px;
-    color: white;
-    margin-top: 35px;
+    font-size: 15px; /* Sets font size to 15px */
+    color: white; /* Sets text color to white */
+    margin-top: 35px;  /* Adds a top margin of 35px */
 }
 img {
-    height: 200px;
-    border-radius: 20px;
+    height: 200px; /* Sets image height to 200px */
+    border-radius: 20px; /* Rounds the corners with a radius of 20px */
 }
 button {
-    width: 130px;
-    height: 40px;
-    background-color: black;
-    color: white;
-    font-size: 20px;
+    width: 130px; /* Sets button width to 130px */
+    height: 40px; /* Sets button height to 40px */
+    background-color: black; /* Sets background color to black */
+    color: white; /* Sets text color to white */
+    font-size: 20px; /* Sets font size to 20px */
 }
 button:hover {
-    background-color: rgb(63, 63, 63);
-    border: 3px solid black;
+    background-color: rgb(63, 63, 63); /* Changes background color on hover */
+    border: 3px solid black; /* Adds a black border on hover */
 }
 .img-container {
-     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+     display: flex; /* Displays image container as flex */
+    flex-direction: column; /* Sets flex direction to column */
+    align-items: center;    /* Aligns items to the center */
+    justify-content: center; /* Justifies content to the center */
     
 }
 @media screen and (max-width: 480px) {
     .zoo {
-        display: grid;
-        grid-template-columns: auto;
+        display: grid; /* Displays zoo as grid */
+        grid-template-columns: auto; /* Creates a single column */
     }
 }

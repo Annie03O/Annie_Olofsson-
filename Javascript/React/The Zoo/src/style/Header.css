@@ -1,13 +1,13 @@
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    height: 75px;
-    border-bottom: 1px solid white;
+    display: flex; /* Displays a header as flex */
+    justify-content: space-between; /* Justifies content with space between */
+    align-items: center; /* Aligns items to the center */
+    padding: 1rem; /* Adds padding of 1 rem */
+    height: 75px; /* Sets height to 75px */
+    border-bottom: 1px solid white; /* Adds a white bottom border */
 }
 .logo {
-    position: relative;
-    font-size: 30px;
-    top: 15px;
+    position: relative; /* Sets position to relative */
+    font-size: 30px;   /* Sets font size to 30px */
+    top: 15px; /* Moves the logo 15px from the top */
 }
