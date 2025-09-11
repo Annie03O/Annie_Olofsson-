@@ -1,21 +1,22 @@
 import {useState} from "react";
 import { Todo } from "../models/Todo";
 
-// Funktion som returnerar en lista med todos
+// Functional component for the TodoList
 export const TodoList = () => {
-    //Lista med todosobjekt
+    // State to hold the list of todos
     const [todos, setTodos] = useState<Todo[]>([
         new Todo(1, "Diska", false),
         new Todo(2, "Städa", false),
         new Todo(3, "Plugga", false),
         new Todo(4, "Vik tvätt", false),
     ])
-    //Funktion som tar bort ett todoobjekt från listan med filter
+
+    //Function to remove a todo by its id
     const removeTodo = (id: number) => {
         setTodos(todos.filter((todo) => todo.id !== id));
     }
     return (
-        //Html som returneras
+        //Html structure for displaying the todo list
         <>
             <ul className="todo-list">
                 {todos.map((todo) => (

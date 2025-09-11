@@ -1,4 +1,4 @@
-// En class med id, uppgift och om den är klar eller inte
+// Model class for a Todo item
 export class Todo {
     constructor(public id: number, public task: string, public completed: boolean) {
         this.id = id;

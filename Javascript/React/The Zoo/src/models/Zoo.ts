@@ -1,3 +1,4 @@
+// Model type for Zoo animal
 export type ZooType = {
     id: number;
     imageUrl: string;
@@ -7,6 +8,7 @@ export type ZooType = {
     lastFed: string;   
 }
 
+// Alternative images for the animals in case the main image fails to load
 export const altimages: Array<Partial<ZooType>> = [
     {"id": 1, "altimageUrl": "https://th.bing.com/th/id/OIP.rNX1nmbUFeo-X2_bnExPLgAAAA?rs=1&pid=ImgDetMain"},
     {"id": 2, "altimageUrl": "https://www.zooroyal.de/magazin/wp-content/uploads/2019/10/hund-im-herbst-760x570.jpg"},
